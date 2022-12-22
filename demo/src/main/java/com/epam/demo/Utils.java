@@ -12,10 +12,8 @@ public class Utils {
                     return false;
                 if (str.trim().isEmpty())
                     return false;
-                for(int i = 0; i < str.length(); i++) {
-                    if(str.charAt(0) == '0')
-                        return false;
-                }
+                if(str.charAt(0) == '0')
+                    return false;
                 if (Double.parseDouble(str) <= 0)
                     return false;
             }
